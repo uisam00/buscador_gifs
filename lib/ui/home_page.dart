@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:buscador_gifs/ui/gif_page.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -102,7 +101,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   int _getCount(List data) {
-    if (_search == null || _search.isEmpty || _search.) {
+    if (_search == null || _search.isEmpty) {
       return data.length;
     } else {
       return data.length + 1;
